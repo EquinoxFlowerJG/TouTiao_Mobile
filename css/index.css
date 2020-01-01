@@ -1,0 +1,270 @@
+
+/* common css codes */
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+
+
+/* 头部固定区 */
+.head-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.62rem;
+    z-index: 999;
+}
+/* logo区 */
+.head-logo{
+    height: .88rem;
+    background: #d43d3d;
+    text-align: center;
+}
+
+.head-logo .head-center h1{
+    width: 1.66rem;
+    height: .88rem;
+    background: url('../images/logo.png') no-repeat right center/1.66rem auto;
+    display: inline-block;
+    /* padding-left: .33rem; */
+}
+.head-logo .head-center i{
+    width: .5rem;
+    height: .88rem;
+    background: url('../images/head-refresh.png') no-repeat center/.33rem auto;
+    display: inline-block;
+}
+.head-logo .head-mail{
+    margin-left: .24rem;
+    margin-top: .19rem;
+}
+.head-logo .head-mail a{
+    display: block;
+    width: .64rem;
+    height: .5rem;
+    background: url('../images/head-mail.png') no-repeat center/contain;
+}
+.head-logo .head-search{
+    margin-right: .24rem;
+    margin-top: .2rem;
+    
+}
+.head-logo .head-search a{
+    display: block;
+    width: .48rem;
+    height: .48rem;
+    background: url('../images/head-search.png') no-repeat center/contain;
+}
+/* 菜单区 */
+.head-menu{
+    height: .74rem;
+    background: #f4f5f6;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+.head-menu .menu-right-btn{
+    width: 1rem;
+    height: .72rem;
+    line-height: .72rem;
+    background: rgba(244, 245, 246, 0.1) url('../images/+のbackground-pic.png') no-repeat left top/contain;
+}
+.head-menu .menu-right-btn a{
+    display: block;
+    width: .8rem;
+    height: .72rem;
+    font-size: .8rem;
+    font-weight: 200;
+    color: #f85959;
+    margin-left: .2rem;
+    text-align: center;
+    background: #f4f5f6;
+}
+.head-menu .menu-list{
+    padding-right: .8rem;
+    white-space: nowrap;
+    overflow-y: scroll;
+    padding-top: .1rem;
+}
+
+.head-menu .menu-list a{
+    font-size: .34rem;
+    color: #505050;
+    display: inline-block;
+    padding: 0 .2rem .5rem;
+}
+
+/* 内容区 */
+.container{
+    margin: 1.62rem .3rem 1.2rem;
+}
+
+/* banner图 */
+.banner img{
+    width: 100%;
+    display: inline-block;
+}
+.swiper-pagination{
+    color: #fff;
+    font-size: .4rem;
+    left: 2.6rem;
+}
+.banner .swiper-slide{
+    position: relative;
+}
+.banner .swiper-slide p{
+    position: absolute;
+    bottom: .23rem;
+    color: #fff;
+    font-size: .32rem;
+    width: 100%;
+    padding-left: .2rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 70%;
+}
+
+/* 内容块 */
+section{
+    border-bottom: 1px solid rgba(221, 221, 221, 0.6);
+    padding: .32rem 0;
+    min-height: .84rem;
+}
+
+/* display:flex 控制它的子元素的水平排列，加在父元素身上的属性 
+   align-items: flex-start / flex-end / center;   子元素整体对齐 
+
+   [box]
+    -webkit-box-pack: justify;   = > align-items 
+*/
+.item-sec a{
+    /* -webkit-display:flex;
+    -ms-display: flex;
+    display: flex; */
+    display: block;
+}
+.item-desc {
+    /* flex-direction: row; */
+    /* -webkit-box-orient: vertical; 
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    align-items: flex-start; */
+    vertical-align: .2rem;
+}
+.item-desc .item-tit{
+    font-size: .36rem;
+    color: #222;
+    line-height: .44rem;
+    font-weight: 400;
+    margin: 0;
+    display: inline-block;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.item-desc .item-info{
+    font-size: .22rem;
+    color: #999;
+    margin-top: .12rem;
+}
+.item-desc .item-info span{
+    margin-right: .1rem;
+}
+.item-desc .item-info span.info-tag{
+    border: 1px solid rgba(248, 89, 89, 0.5);
+    border-radius: .04rem;
+    color: #f85959;
+}
+.item-sec a .item-img{
+    margin: 0 .24rem 0 0;
+}
+.item-sec a .item-img img{
+    width: 100%;
+    /* vertical-align: middle; */
+    display: block;
+}
+.pic-text a div.item-img{
+    display: inline-block;
+    width: 33%;
+}
+.pic-text .item-desc{
+    display: inline-block;
+    width: 60%;
+}
+
+/* 广告块 */
+.item-ad img{
+    width: 100%;
+    margin-top: .12rem;
+}
+.item-ad .item-desc .item-info .info-ad{
+    color: #2a90d7;
+    border: 1px solid rgba(42, 144, 215, 0.5);
+    border-radius: .04rem;
+}
+
+/* 多图块 */
+.item-sec .item-multi-imgs{
+    display: flex;
+    margin-top: .12rem;
+}
+.item-sec .item-multi-imgs img{
+    flex: 1;
+    width: 33%;
+    margin-right: .04rem;
+}
+
+
+/* 底部广告 */
+.foot-ad{
+    position: fixed;
+    bottom: 0;
+    left: 0rem;
+    height: 1rem;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    padding: .13rem .3rem;
+    box-sizing: border-box;
+}
+
+.foot-ad a{
+    display: block;
+    /* line-height: 1rem; */
+    line-height: .72rem;
+}
+.foot-ad a .ad-logo .logo{
+    width: .72rem;
+    height: .72rem;
+    background: url('../images/toutiao-logo.png') no-repeat left top/100% 100%;
+    border: 1px solid #eee;
+    display: inline-block;
+}
+.foot-ad a .ad-logo .title{
+    font-size: .28rem;
+    margin-left: .16rem;
+    line-height: .3rem;
+    vertical-align: .25rem;
+}
+.foot-ad a .open{
+    width: 1.44rem;
+    height: .56rem;
+    line-height: .56rem;
+    font-size: .28rem;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    background-color: #ff5050;
+    border-radius: .28rem;
+    margin: .08rem 0;
+}
+
+
